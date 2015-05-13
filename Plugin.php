@@ -41,16 +41,12 @@ class Plugin extends PluginBase
                 return;
             }
             $theme = Settings::get('theme', '');
-            //return false;
             return strlen($theme) > 0 && BackendAuth::getUser() !== null && BackendAuth::getUser()->hasAccess($permission) ? $theme : null;
         };
         app()['filipac.activetheme'] = $activeThemeFn;
         \Event::listen('cms.activeTheme', function () {
             return app('filipac.activetheme');
         });
-
-
-        //if()
     }
 
 
