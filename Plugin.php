@@ -24,8 +24,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'ThemePreview',
-            'description' => 'No description provided yet...',
+            'name'        => 'Theme Preview',
+            'description' => 'Preview & edit a theme before going live',
             'author'      => 'filipac',
             'icon'        => 'icon-leaf'
         ];
@@ -66,13 +66,13 @@ class Plugin extends PluginBase
         return [
             'settings_themepreview' => [
                 'label'       => 'Theme preview',
-                'description' => 'Preview a theme before publishing',
+                'description' => 'Preview & edit a theme before going live',
                 'category'    => SettingsManager::CATEGORY_CMS,
                 'icon'        => 'icon-cog',
                 'class'       => 'filipac\ThemePreview\Models\Settings',
                 'order'       => 500,
                 'permissions' => [ 'filipac.themepreview.manage_settings' ],
-                'keywords'    => 'security location'
+                'keywords'    => 'theme layout preview'
             ]
         ];
     }
