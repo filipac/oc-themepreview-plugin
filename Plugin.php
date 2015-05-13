@@ -38,7 +38,7 @@ class Plugin extends PluginBase
             $active     = Settings::get('active', '0');
             $permission = Settings::get('permission', 'cms.manage_themes');
             if ($active == '0') {
-                return;
+                return null;
             }
             $theme = Settings::get('theme', '');
             return strlen($theme) > 0 && BackendAuth::getUser() !== null && BackendAuth::getUser()->hasAccess($permission) ? $theme : null;
