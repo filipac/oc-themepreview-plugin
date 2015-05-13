@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    active:
+        label: Activate theme preview?
+        type: checkbox
+        default: false
+    theme:
+        label: Theme to preview
+        type: dropdown
+        default:
+    permission:
+            label: Permission required to preview
+            type: dropdown
+            default: cms.manage_themes
