@@ -24,10 +24,10 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Theme Preview',
-            'description' => 'Preview & edit a theme before going live',
+            'name'        => 'filipac.themepreview::lang.name',
+            'description' => 'filipac.themepreview::lang.description',
             'author'      => 'filipac',
-            'icon'        => 'icon-leaf'
+            'icon'        => 'icon-cog'
         ];
     }
 
@@ -54,7 +54,7 @@ class Plugin extends PluginBase
     {
         return [
             'filipac.themepreview.manage_settings' => [
-                'label' => 'Manage the theme preview settings',
+                'label' => 'filipac.themepreview::lang.permissions.manage_settings',
                 'tab'   => 'cms::lang.permissions.name'
             ]
         ];
@@ -65,8 +65,8 @@ class Plugin extends PluginBase
     {
         return [
             'settings_themepreview' => [
-                'label'       => 'Theme preview',
-                'description' => 'Preview & edit a theme before going live',
+                'label'       => 'filipac.themepreview::lang.name',
+                'description' => 'filipac.themepreview::lang.description',
                 'category'    => SettingsManager::CATEGORY_CMS,
                 'icon'        => 'icon-cog',
                 'class'       => 'filipac\ThemePreview\Models\Settings',

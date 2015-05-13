@@ -4,14 +4,14 @@
 
 fields:
     active:
-        label: Activate theme preview?
+        label: filipac.themepreview::lang.settings.active
         type: checkbox
         default: false
     theme:
-        label: Theme to preview
+        label: filipac.themepreview::lang.settings.theme
         type: dropdown
         default:
     permission:
-            label: Permission required to preview
+            label: filipac.themepreview::lang.settings.permission
             type: dropdown
             default: cms.manage_themes
