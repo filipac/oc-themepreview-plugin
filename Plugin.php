@@ -1,7 +1,7 @@
-<?php namespace filipac\ThemePreview;
+<?php namespace Filipac\ThemePreview;
 
 use Backend\Facades\BackendAuth;
-use filipac\ThemePreview\Models\Settings;
+use Filipac\ThemePreview\Models\Settings;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Response;
 use System\Classes\PluginBase;

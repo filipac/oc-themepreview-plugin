@@ -1,4 +1,4 @@
-<?php namespace filipac\ThemePreview\Models;
+<?php namespace Filipac\ThemePreview\Models;
 
 use Cms\Classes\Theme;
 use Model;
