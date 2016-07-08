@@ -44,7 +44,7 @@ class Plugin extends PluginBase
             return strlen($theme) > 0 && BackendAuth::getUser() !== null && BackendAuth::getUser()->hasAccess($permission) ? $theme : null;
         };
         app()['filipac.activetheme'] = $activeThemeFn;
-        \Event::listen('cms.activeTheme', function () {
+        \Event::listen('cms.theme.getActiveTheme', function () {
             return app('filipac.activetheme');
         });
     }
